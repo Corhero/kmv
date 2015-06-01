@@ -12,7 +12,7 @@ kmv.init = function() {
 };
 
 kmv.injectMarkup = function() {
-	var markup = '<style>#kycoMediaVault *{margin: 0;padding: 0;border: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}#kycoMediaVault{position: fixed;right: 0;top: 0;width: 400px;height: 100%;background-color: rgba(255, 255, 255, 0.8);box-shadow: 0 0 5px #000;}#kmvClose{position: absolute;top: 0;right: 0;width: 45px;height: 45px;border: 1px solid #000;text-align: center;line-height: 45px;cursor: pointer;font-family: Arial, Helvetica, sans-serif;font-size: 13px;font-weight: bold;}#kmvClose:hover{text-decoration: none;}</style><div id="kycoMediaVault"><div></div><a id="kmvClose">X</a></div>';
+	var markup = '<style>#kycoMediaVault *{margin: 0;padding: 0;border: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}#kycoMediaVault{position: fixed;right: 0;top: 0;z-index: 2147483647;width: 400px;height: 100%;background-color: rgba(255, 255, 255, 0.8);box-shadow: 0 0 5px #000;}#kmvClose{position: absolute;top: 0;right: 0;width: 45px;height: 45px;border: 1px solid #000;text-align: center;line-height: 45px;cursor: pointer;font-family: Arial, Helvetica, sans-serif;font-size: 13px;font-weight: bold;}#kmvClose:hover{text-decoration: none;}</style><div id="kycoMediaVault"><div></div><a id="kmvClose">X</a></div>';
 	$('body').append(markup);
 
 	$('#kmvClose').click(function() {
