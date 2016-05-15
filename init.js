@@ -1,7 +1,7 @@
 var kmv = {} || kmv;
 
 kmv.init = function() {
-  $('body').append('<iframe src="https://corhero.github.io/kmv/test.html"></iframe>');
+  $('body').append('<iframe id="kmviframe" src="https://corhero.github.io/kmv/test.html" style="position:fixed; top:0; right:0; width:200px; height:200px; border:10px solid #000;"></iframe>');
   // $.ajax({
   //   url: 'https://corhero.github.io/kmv/test.html',
   //   success: function() {

@@ -4,11 +4,7 @@
   <p>
     Bookmark media more easily. Drag this bookmarklet to the Bookmarks bar of your browser:
     <br>
-    <a href="javascript:(function(){var a=document.createElement('script');a.setAttribute('id','kmvScript');a.setAttribute('src','http://dev.kmv.com/init.js');document.body.appendChild(a)})();">
-      MediaVault - Local
-    </a>
-    <br>
-    <a href="javascript:(function(){var a=document.createElement('script');a.setAttribute('id','kmvScript');a.setAttribute('src','https://corhero.github.io/kmv/init.js');document.body.appendChild(a)})();">
+    <a href="javascript:var kmv=kmv||!1;(function(){if(kmv)document.getElementById("kmviframe"),a.setAttribute("class","");else{var a=document.createElement("script");a.setAttribute("id","kmv");a.setAttribute("src","https://corhero.github.io/kmv/init.js");document.body.appendChild(a);kmv=!0}})();">
       MediaVault
     </a>
   </p>
