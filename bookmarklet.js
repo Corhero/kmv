@@ -1,6 +1,6 @@
-var kmvyo = kmvyo || false;
-
 (function() {
+  kmvyo = kmvyo || false;
+
   if (!kmvyo) {
     var scripto = document.createElement('script');
     scripto.setAttribute('id', 'kmv');
