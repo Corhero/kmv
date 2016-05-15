@@ -9,6 +9,6 @@ var kmvyo = kmvyo || false;
     kmvyo = true;
   } else {
     var iframo = document.getElementById('kmviframe');
-    iframo.setAttribute('class', '');
+    iframo.style.display = 'block';
   }
 })();
