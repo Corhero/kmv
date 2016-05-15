@@ -1,10 +1,13 @@
 var kmv = {} || kmv;
 
 kmv.init = function() {
-  $('body').append('<iframe id="kmviframe" src="https://corhero.github.io/kmv/test.html" style="position:fixed; top:0; right:0; width:200px; height:200px; border:10px solid #000;"></iframe>');
-  $('#kmviframe #close').click(function() {
-    $('#kmviframe').css('display', 'hidden');
-  });
+  if (window.location.href === 'http://localhost:8000/') {
+    iframeUrl = 'http://localhost:8000/iframe.html';
+  } else {
+    iframeUrl = 'https://corhero.github.io/kmv/iframe.html';
+  }
+  $('body').append('<iframe id="kmviframe" src="' + iframeUrl + '" frameBorder="0" style="position:fixed; top:0; right:0; width:300px; height:100%; border-left:1px solid #000;"></iframe>');
+
   // $.ajax({
   //   url: 'https://corhero.github.io/kmv/test.html',
   //   success: function() {
