@@ -1,12 +1,14 @@
 var kmv = {} || kmv;
 
 kmv.init = function() {
-  $.ajax({
-    url: 'https://corhero.github.io/kmv/test.html',
-    success: function() {
-      console.log('got URL!');
-    }
-  })
+  $('body').append('<iframe src="https://corhero.github.io/kmv/test.html"></iframe>');
+  // $.ajax({
+  //   url: 'https://corhero.github.io/kmv/test.html',
+  //   success: function() {
+  //     console.log('got URL!');
+  //
+  //   }
+  // })
   // var markup = '<style id="kmvStyle">#kycoMediaVault *{margin: 0;padding: 0;border: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-family: monospace;}#kycoMediaVault{position: fixed;right: 0;top: 0;z-index: 2147483647;width: 400px;height: 100%;padding: 5px 5px;font-size: 11px;background-color: #fff;box-shadow: 0 0 5px #000;white-space: nowrap;}#kmvClose{position: absolute;top: 0;right: 0;width: 25px;height: 25px;border: 1px solid #000;text-align: center;line-height: 25px;cursor: pointer;font-size: 13px;font-weight: bold;}#kmvClose:hover{text-decoration: none;}</style><div id="kycoMediaVault"><div id="kmvContent"></div><a id="kmvClose">X</a></div>';
   // $('body').append(markup);
   //
